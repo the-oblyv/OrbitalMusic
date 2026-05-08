@@ -162,7 +162,7 @@ export default function Intro() {
         </div>
         <footer className="flex h-auto w-full items-center justify-center border-neutral-900">
           <p className="mr-1 text-center text-xs font-medium text-neutral-400 transition-colors duration-100 ease-linear group-hover:text-white">
-            maxe with 💜 by
+            made with 💜 by
           </p>
           <a
             href="https://github.com/the-oblyv/"
