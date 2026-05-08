@@ -162,13 +162,13 @@ export default function Intro() {
         </div>
         <footer className="flex h-auto w-full items-center justify-center border-neutral-900">
           <p className="mr-1 text-center text-xs font-medium text-neutral-400 transition-colors duration-100 ease-linear group-hover:text-white">
-            Made with 💖 by
+            maxe with 💜 by
           </p>
           <a
-            href="https://github.com/tejas-git64"
+            href="https://github.com/the-oblyv/"
             className="text-xs text-white outline-none duration-100 ease-in hover:text-teal-400 focus:text-teal-400"
           >
-            Tej
+            the-oblyv
           </a>
         </footer>
       </div>
