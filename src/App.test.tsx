@@ -12,7 +12,7 @@ describe("App", () => {
   test("should render", async () => {
     render(<App />);
     await waitFor(() => {
-      const app = screen.getByText("Lowkey Music");
+      const app = screen.getByText("Orbital Music");
       expect(app).toBeInTheDocument();
     });
   });
@@ -26,7 +26,7 @@ describe("App", () => {
       </QueryClientProvider>,
     );
     await waitFor(() => {
-      const intro = screen.getByText("Lowkey Music");
+      const intro = screen.getByText("Orbital Music");
       expect(intro).toBeInTheDocument();
     });
   });

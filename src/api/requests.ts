@@ -6,7 +6,7 @@ import { defaultSearchData } from "../utils/utils";
 export async function getWidgetData() {
   try {
     const res = await fetch(
-      `https://lowkey-backend.vercel.app/api/playlists?id=1265154514`,
+      `https://orbitalmusic-backend.vercel.app/api/playlists?id=1265154514`,
     );
     const { data } = await res.json();
     return data || null;
@@ -19,10 +19,10 @@ export async function getWidgetData() {
 export async function getTimelyData() {
   try {
     const [res1, res2, res3, res4] = await Promise.all([
-      fetch("https://lowkey-backend.vercel.app/api/playlists?id=1223482895"),
-      fetch("https://lowkey-backend.vercel.app/api/playlists?id=2252904"),
-      fetch("https://lowkey-backend.vercel.app/api/playlists?id=158206266"),
-      fetch("https://lowkey-backend.vercel.app/api/playlists?id=1210453303"),
+      fetch("https://orbitalmusic-backend.vercel.app/api/playlists?id=1223482895"),
+      fetch("https://orbitalmusic-backend.vercel.app/api/playlists?id=2252904"),
+      fetch("https://orbitalmusic-backend.vercel.app/api/playlists?id=158206266"),
+      fetch("https://orbitalmusic-backend.vercel.app/api/playlists?id=1210453303"),
     ]);
     const viral = await res1.json();
     const weekly = await res2.json();
@@ -43,7 +43,7 @@ export async function getTimelyData() {
 export const getPlaylist = async (genre: string) => {
   try {
     const res = await fetch(
-      `https://lowkey-backend.vercel.app/api/search/playlists?query=${genre}`,
+      `https://orbitalmusic-backend.vercel.app/api/search/playlists?query=${genre}`,
     );
     const { data } = await res.json();
     return data?.results || null;
@@ -56,7 +56,7 @@ export const getPlaylist = async (genre: string) => {
 export const getPlaylistData = async (id: string) => {
   try {
     const res = await fetch(
-      `https://lowkey-backend.vercel.app/api/playlists?id=${id}`,
+      `https://orbitalmusic-backend.vercel.app/api/playlists?id=${id}`,
     );
     const { data } = await res.json();
     return data || null;
@@ -68,7 +68,7 @@ export const getPlaylistData = async (id: string) => {
 export const getAlbumData = async (id: string) => {
   try {
     const res = await fetch(
-      `https://lowkey-backend.vercel.app/api/albums?id=${id}`,
+      `https://orbitalmusic-backend.vercel.app/api/albums?id=${id}`,
     );
     const { data } = await res.json();
     return data || null;
@@ -82,7 +82,7 @@ export const getSearchResults = async (query: string) => {
   if (query !== "" && query.length >= 2) {
     try {
       const res = await fetch(
-        `https://lowkey-backend.vercel.app/api/search?query=${query}`,
+        `https://orbitalmusic-backend.vercel.app/api/search?query=${query}`,
       );
       if (res.ok) {
         const data = await res.json();
@@ -102,7 +102,7 @@ export const getSearchResults = async (query: string) => {
 export const getArtistDetails = async (id: string) => {
   try {
     const res = await fetch(
-      `https://lowkey-backend.vercel.app/api/artists/${id}`,
+      `https://orbitalmusic-backend.vercel.app/api/artists/${id}`,
     );
     const { data } = await res.json();
     return data || null;
@@ -115,7 +115,7 @@ export const getArtistDetails = async (id: string) => {
 export const getArtistAlbums = async (id: string) => {
   try {
     const res = await fetch(
-      `https://lowkey-backend.vercel.app/api/artists/${id}/albums?page=0`,
+      `https://orbitalmusic-backend.vercel.app/api/artists/${id}/albums?page=0`,
     );
     const { data } = await res.json();
     return data?.albums || null;
@@ -128,7 +128,7 @@ export const getArtistAlbums = async (id: string) => {
 export const getArtistSongs = async (id: string) => {
   try {
     const res = await fetch(
-      `https://lowkey-backend.vercel.app/api/artists/${id}/songs?page=0`,
+      `https://orbitalmusic-backend.vercel.app/api/artists/${id}/songs?page=0`,
     );
     const { data } = await res.json();
     return data?.songs || null;

@@ -43,7 +43,7 @@ export default function Search() {
       navigate(`/artists/${id}`);
     }
     if (type === "song") {
-      fetch(`https://lowkey-backend.vercel.app/api/songs/${id}`)
+      fetch(`https://orbitalmusic-backend.vercel.app/api/songs/${id}`)
         .then((res) => res.json())
         .then((data) => {
           if (data && (data.data[0] as TrackDetails)) {

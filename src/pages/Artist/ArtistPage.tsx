@@ -27,7 +27,7 @@ const FollowButton = lazy(
   () => import("../../components/FollowButton/FollowButton"),
 );
 
-preconnect("https://lowkeymusic-v2.netlify.app");
+preconnect("https://orbitalmusic.netlify.app");
 
 export default function ArtistPage() {
   const { id } = useParams();

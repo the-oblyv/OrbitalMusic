@@ -4,7 +4,7 @@ import "./App.css";
 import { preconnect } from "react-dom";
 import ErrorFallback from "./components/ErrorFallback/ErrorFallback";
 
-preconnect("https://lowkey-backend.vercel.app");
+preconnect("https://orbitalmusic-backend.vercel.app");
 
 export const routes = [
   {

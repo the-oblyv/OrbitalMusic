@@ -31,7 +31,7 @@ const ShuffleButton = lazy(
   () => import("../../components/ShuffleButton/ShuffleButton"),
 );
 
-preconnect("https://lowkeymusic-v2.netlify.app");
+preconnect("https://orbitalmusic.netlify.app");
 
 export default function AlbumPage() {
   const { id } = useParams();

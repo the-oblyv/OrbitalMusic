@@ -18,7 +18,7 @@ import { TimelyFallback, Widgetfallback } from "./Loading";
 const Song = lazy(() => import("../../components/Song/Song"));
 const Section = lazy(() => import("../../components/Section/Section"));
 
-preconnect("https://lowkeymusic-v2.netlify.app");
+preconnect("https://orbitalmusic.netlify.app");
 preload(
   "https://c.saavncdn.com/editorial/PopHits2025English_20250708135249.jpg?bch=1752248614",
   {

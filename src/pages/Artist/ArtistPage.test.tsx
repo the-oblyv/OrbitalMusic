@@ -135,7 +135,7 @@ describe("ArtistPage", () => {
       const result = await getArtistDetails(id);
 
       expect(fetch).toHaveBeenCalledWith(
-        `https://lowkey-backend.vercel.app/api/artists/${id}`,
+        `https://orbitalmusic-backend.vercel.app/api/artists/${id}`,
       );
       expect(result).toEqual(sampleArtist);
     });
@@ -289,7 +289,7 @@ describe("ArtistPage", () => {
       const result = await getArtistAlbums(id);
 
       expect(fetch).toHaveBeenCalledWith(
-        `https://lowkey-backend.vercel.app/api/artists/${id}/albums?page=0`,
+        `https://orbitalmusic-backend.vercel.app/api/artists/${id}/albums?page=0`,
       );
       expect(result).toEqual(mockAlbums);
     });
@@ -414,7 +414,7 @@ describe("ArtistPage", () => {
       const result = await getArtistSongs(id);
 
       expect(fetch).toHaveBeenCalledWith(
-        `https://lowkey-backend.vercel.app/api/artists/${id}/songs?page=0`,
+        `https://orbitalmusic-backend.vercel.app/api/artists/${id}/songs?page=0`,
       );
       expect(result).toEqual(mockSongs);
     });

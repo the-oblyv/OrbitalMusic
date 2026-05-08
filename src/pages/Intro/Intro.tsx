@@ -76,7 +76,7 @@ export default function Intro() {
         className="relative mx-auto flex h-auto w-[calc(100%-5%)] animate-card-fadein flex-col items-center rounded-lg border border-[#ffffff25] bg-[#0000004f] px-4 py-4 backdrop-blur-md duration-200 ease-in sm:w-[430px] md:px-5"
       >
         <h2 className="w-full bg-gradient-to-r from-purple-400 via-teal-500 to-cyan-400 bg-clip-text pl-1.5 text-left text-3xl font-semibold text-transparent xl:text-4xl">
-          Lowkey Music
+          Orbital Music
         </h2>
         <div className="my-4 flex h-auto w-full flex-col items-start justify-between">
           <h2 className="group cursor-pointer pl-2 text-lg font-medium text-white">
